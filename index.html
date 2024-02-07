@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send a Rose to Your Best Friend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .message {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .rose-img {
+            width: 400px;
+            height: auto;
+        }
+        .send-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Send a Rose to Your Best Friend</h1>
+        <div class="message">
+            <p>Hey prishuu, here's a virtual rose just for you!</p>
+        </div>
+        <img class="rose-img" src=https://jooinn.com/images/red-rose-photography-1.jpg alt="Rose Image">
+        <br><br>
+        <button class="send-button" onclick="sendRose()">Send Rose</button>
+        <div id="confirmation"></div>
+    </div>
+
+    <script>
+        function sendRose() {
+            // You can implement sending functionality here, such as sending an email or triggering an event
+            document.getElementById('confirmation').innerHTML = "<p>Rose sent! 🌹</p>";
+        }
+    </script>
+</body>
+</html>
